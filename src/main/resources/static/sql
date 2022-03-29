@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS `plataforma` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `plataforma`;
+
+
+-- Volcando estructura para tabla plataforma.usuario
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) DEFAULT NULL,
+  `apellido` varchar(50) DEFAULT NULL,
+  `telefono` varchar(15) DEFAULT NULL,
+  `correo` varchar(50) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Volcando datos para la tabla plataforma.usuario: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `telefono`, `correo`, `password`) VALUES
+	(1, 'Hercules', 'Donoso', '11111111', 'hercules@gmail.com', '123');
